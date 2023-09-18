@@ -1,9 +1,9 @@
 # Imports
 import dash
-from dash import dcc
-from dash import html
-from dash.dependencies import Input, Output
-from dash import dash_table 
+from dash import dcc, html, callback_context
+from dash.dependencies import Input, Output, State
+from dash import dash_table
+from dash_table.Format import Format
 import dash_bootstrap_components as dbc
 
 import pandas as pd
@@ -12,6 +12,8 @@ import re
 import string
 import numpy as np
 import nltk
+
+
 
 # Pre-processing functions
 def remove_urls(text):

@@ -9,3 +9,4 @@ gunicorn
 nltk
 numpy
 openpyxl
+dash-dangerously-set-inner-html==0.0.2 
